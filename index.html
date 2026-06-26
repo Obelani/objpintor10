@@ -137,12 +137,22 @@ a{text-decoration:none;color:inherit}
 .garantia-box p{font-size:15px;color:var(--cinza-texto);line-height:1.7;max-width:420px;margin:0 auto}
 footer{border-top:1px solid var(--borda);padding:24px 20px;text-align:center;color:var(--cinza-texto);font-size:13px;background:var(--cinza-fundo)}
 footer a{color:var(--azul);text-decoration:underline}
-.cta-fixo{display:none;position:fixed;bottom:0;left:0;right:0;padding:10px 14px;background:rgba(255,255,255,0.97);border-top:2px solid var(--azul);z-index:99;box-shadow:0 -4px 20px rgba(0,0,0,0.1)}
-@media(max-width:640px){.cta-fixo{display:block}}
+.cta-fixo{display:none}
 .text-center{text-align:center}
 .mt-32{margin-top:32px}
 .mt-24{margin-top:24px}
-@media(max-width:640px){.secao{padding:48px 16px}.hero{padding:44px 16px 0}}
+@media(max-width:640px){
+  .secao{padding:48px 16px}
+  .hero{padding:44px 16px 0}
+  .mapa-card h3{font-size:15.6px}
+  .mapa-card p{font-size:14.4px}
+  .mapa-card .letra{font-size:24px}
+  .como-funciona-img{max-width:100%;border-radius:8px}
+  .bonus-grid{grid-template-columns:1fr;gap:16px}
+  .bonus-grid img{width:100%;border-radius:10px}
+  .depo-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;gap:12px;padding-bottom:12px;margin-bottom:32px;grid-template-columns:unset}
+  .depo-grid img{flex:0 0 75vw;width:75vw;scroll-snap-align:center;border-radius:10px}
+}
 </style>
 </head>
 <body>
