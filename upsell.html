@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Espera! Oferta Especial Para Você</title>
+
+<!-- 🔄 ALTERAR: Pixel do Facebook -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','975531151726344');fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=975531151726344&ev=PageView&noscript=1"/></noscript>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids async defer></script>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --azul:#1E3A8A;--azul-hover:#1e40af;--azul-claro:#EFF6FF;--azul-medio:#DBEAFE;
+  --amarelo:#FACC15;--amarelo-hover:#EAB308;
+  --preto:#111827;--cinza-texto:#6B7280;--cinza-fundo:#F9FAFB;
+  --branco:#FFFFFF;--verde:#16A34A;--verde-claro:#DCFCE7;
+  --vermelho:#DC2626;--vermelho-claro:#FEF2F2;--borda:#E5E7EB;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--branco);color:var(--preto);line-height:1.6;overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Montserrat',sans-serif;line-height:1.15}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+.container{max-width:720px;margin:0 auto;padding:0 20px}
+
+/* ── TOPO DE URGÊNCIA ── */
+.topo-urgencia{
+  background:var(--vermelho);
+  color:var(--branco);
+  text-align:center;
+  padding:14px 20px;
+  font-family:'Montserrat',sans-serif;
+  font-weight:800;
+  font-size:clamp(13px,3vw,16px);
+  letter-spacing:0.3px;
+  animation:pulsar 2s infinite;
+}
+@keyframes pulsar{0%,100%{opacity:1}50%{opacity:0.85}}
+
+/* ── BADGE TOPO ── */
+.badge-desconto{
+  background:var(--vermelho);
+  color:var(--branco);
+  display:inline-block;
+  font-family:'Montserrat',sans-serif;
+  font-weight:900;
+  font-size:clamp(11px,2vw,13px);
+  letter-spacing:2px;
+  text-transform:uppercase;
+  padding:6px 20px;
+  border-radius:999px;
+  margin-bottom:16px;
+  animation:entrar 0.6s ease-out;
+}
+@keyframes entrar{from{transform:translateY(-20px);opacity:0}to{transform:translateY(0);opacity:1}}
+
+/* ── HERO ── */
+.hero{
+  padding:48px 20px 0;
+  text-align:center;
+  background:var(--branco);
+  border-bottom:1px solid var(--borda);
+}
+.hero-espera{
+  font-family:'Montserrat',sans-serif;
+  font-size:clamp(14px,2.5vw,18px);
+  font-weight:600;
+  color:var(--cinza-texto);
+  margin-bottom:12px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+.hero h1{
+  font-size:clamp(26px,5vw,42px);
+  font-weight:900;
+  color:var(--preto);
+  max-width:640px;
+  margin:0 auto 12px;
+}
+.hero h1 .destaque{color:var(--azul)}
+.hero h1 .destaque-vermelho{color:var(--vermelho)}
+.hero-sub{
+  font-size:clamp(15px,2vw,18px);
+  color:var(--cinza-texto);
+  max-width:560px;
+  margin:0 auto 32px;
+  line-height:1.7;
+}
+
+/* ── BANNER ── */
+.banner-wrap{
+  max-width:500px;
+  margin:0 auto;
+}
+.banner-wrap img{
+  width:100%;
+  border-radius:12px 12px 0 0;
+  border:1px solid var(--borda);
+  border-bottom:none;
+}
+
+/* ── FAIXA DE PREÇO ── */
+.preco-faixa{
+  background:var(--azul);
+  border:1px solid var(--azul);
+  border-radius:0 0 12px 12px;
+  padding:28px 24px 32px;
+  text-align:center;
+  max-width:500px;
+  margin:0 auto 48px;
+  color:var(--branco);
+}
+.preco-faixa .de{
+  font-size:16px;
+  font-weight:600;
+  text-decoration:line-through;
+  color:rgba(255,255,255,0.5);
+  margin-bottom:4px;
+}
+.preco-faixa .por-label{
+  font-size:14px;
+  color:rgba(255,255,255,0.7);
+  font-weight:500;
+  margin-bottom:4px;
+}
+.preco-faixa .valor{
+  font-family:'Montserrat',sans-serif;
+  font-weight:900;
+  font-size:clamp(56px,12vw,88px);
+  color:var(--amarelo);
+  line-height:1;
+  margin-bottom:8px;
+}
+.preco-faixa .valor sup{font-size:28px;vertical-align:super}
+.preco-faixa .economia-pill{
+  display:inline-block;
+  background:var(--verde-claro);
+  color:#166534;
+  font-size:13px;
+  font-weight:700;
+  padding:5px 16px;
+  border-radius:999px;
+  margin-bottom:24px;
+}
+
+/* ── BOTÃO PRINCIPAL ── */
+.btn-sim{
+  display:block;
+  width:100%;
+  background:var(--amarelo);
+  color:var(--azul);
+  font-family:'Montserrat',sans-serif;
+  font-weight:900;
+  font-size:clamp(14px,3vw,18px);
+  padding:20px 24px;
+  border-radius:10px;
+  border:none;
+  cursor:pointer;
+  text-align:center;
+  letter-spacing:0.3px;
+  transition:background 0.15s,transform 0.15s;
+  animation:pulsar-btn 2.5s infinite;
+  line-height:1.3;
+}
+.btn-sim:hover{background:var(--amarelo-hover);transform:scale(1.02)}
+@keyframes pulsar-btn{0%,100%{box-shadow:0 0 0 0 rgba(250,204,21,0.5)}50%{box-shadow:0 0 0 10px rgba(250,204,21,0)}}
+
+.btn-nao{
+  display:block;
+  text-align:center;
+  margin-top:14px;
+  font-size:13px;
+  color:rgba(255,255,255,0.5);
+  text-decoration:underline;
+  cursor:pointer;
+  transition:color 0.15s;
+}
+.btn-nao:hover{color:rgba(255,255,255,0.8)}
+
+/* ── SEÇÕES ── */
+.secao{padding:56px 20px;border-top:1px solid var(--borda)}
+.secao.bg-cinza{background:var(--cinza-fundo)}
+.secao.bg-azul-claro{background:var(--azul-claro)}
+.secao.bg-vermelho-claro{background:var(--vermelho-claro)}
+.secao.bg-branco{background:var(--branco)}
+.secao-titulo{
+  font-family:'Montserrat',sans-serif;
+  font-weight:900;
+  font-size:clamp(20px,4vw,30px);
+  text-align:center;
+  margin-bottom:8px;
+  color:var(--preto);
+}
+.secao-titulo .destaque{color:var(--azul)}
+.secao-sub{
+  text-align:center;
+  color:var(--cinza-texto);
+  font-size:clamp(13px,2vw,15px);
+  margin-bottom:36px;
+  max-width:500px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* ── O QUE VOCÊ LEVA ── */
+.itens-lista{list-style:none;display:flex;flex-direction:column;gap:12px}
+.item{
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+  background:var(--branco);
+  border:1px solid var(--borda);
+  border-radius:12px;
+  padding:16px 18px;
+  font-size:15px;
+  line-height:1.5;
+  transition:border-color 0.2s,box-shadow 0.2s;
+}
+.item:hover{border-color:var(--azul);box-shadow:0 2px 12px rgba(30,58,138,0.08)}
+.item-check{
+  flex-shrink:0;
+  width:24px;height:24px;
+  background:var(--azul);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  margin-top:1px;
+}
+.item-check svg{width:12px;height:12px}
+.item-bonus{
+  background:var(--azul-claro);
+  border-color:var(--azul-medio);
+}
+.item-bonus .item-check{background:var(--amarelo)}
+.item-bonus .item-check svg path{stroke:var(--azul)}
+.item-titulo{font-weight:700;color:var(--azul);font-size:14px}
+.item-desc{font-size:13px;color:var(--cinza-texto);margin-top:2px}
+
+/* ── COMPARATIVO ── */
+.comparativo{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin-bottom:8px;
+}
+@media(max-width:480px){.comparativo{grid-template-columns:1fr;gap:12px}}
+.comp-card{
+  border-radius:14px;
+  padding:24px 20px;
+  text-align:center;
+}
+.comp-card.basico{
+  background:var(--cinza-fundo);
+  border:1px solid var(--borda);
+  opacity:0.7;
+}
+.comp-card.completo{
+  background:var(--azul);
+  border:2px solid var(--amarelo);
+  position:relative;
+}
+.comp-badge{
+  position:absolute;top:-14px;left:50%;transform:translateX(-50%);
+  background:var(--amarelo);color:var(--azul);
+  font-family:'Montserrat',sans-serif;font-weight:800;
+  font-size:11px;letter-spacing:1px;text-transform:uppercase;
+  padding:4px 16px;border-radius:999px;white-space:nowrap;
+}
+.comp-titulo{
+  font-family:'Montserrat',sans-serif;
+  font-weight:800;font-size:13px;
+  text-transform:uppercase;letter-spacing:0.5px;
+  margin-bottom:12px;
+}
+.comp-card.basico .comp-titulo{color:var(--cinza-texto)}
+.comp-card.completo .comp-titulo{color:rgba(255,255,255,0.7)}
+.comp-valor{
+  font-family:'Montserrat',sans-serif;
+  font-weight:900;font-size:38px;line-height:1;
+}
+.comp-card.basico .comp-valor{color:var(--preto)}
+.comp-card.completo .comp-valor{color:var(--amarelo)}
+.comp-descricao{
+  font-size:12px;margin-top:6px;line-height:1.5;
+}
+.comp-card.basico .comp-descricao{color:var(--cinza-texto)}
+.comp-card.completo .comp-descricao{color:rgba(255,255,255,0.75)}
+.comp-itens{
+  list-style:none;
+  margin-top:14px;
+  display:flex;flex-direction:column;gap:6px;
+  text-align:left;
+}
+.comp-item{
+  display:flex;align-items:center;gap:8px;
+  font-size:12px;
+}
+.comp-card.basico .comp-item{color:var(--cinza-texto)}
+.comp-card.completo .comp-item{color:rgba(255,255,255,0.9)}
+.comp-dot{
+  flex-shrink:0;width:16px;height:16px;
+  border-radius:50%;display:flex;align-items:center;justify-content:center;
+}
+.comp-card.basico .comp-dot{background:#D1D5DB}
+.comp-card.completo .comp-dot{background:var(--amarelo)}
+.comp-dot svg{width:8px;height:8px}
+.comp-x{color:#9CA3AF;font-weight:700;font-size:14px}
+
+/* ── DEPOIMENTO DESTAQUE ── */
+.depo-destaque{
+  background:var(--azul-claro);
+  border:1px solid var(--azul-medio);
+  border-left:4px solid var(--azul);
+  border-radius:0 12px 12px 0;
+  padding:20px 24px;
+  margin-bottom:12px;
+}
+.depo-texto{
+  font-size:15px;
+  color:var(--preto);
+  line-height:1.7;
+  font-style:italic;
+  margin-bottom:10px;
+}
+.depo-autor{
+  font-size:13px;
+  font-weight:700;
+  color:var(--azul);
+}
+
+/* ── GARANTIA ── */
+.garantia-box{
+  background:var(--branco);
+  border:2px solid var(--azul-medio);
+  border-radius:14px;
+  padding:32px 28px;
+  text-align:center;
+  max-width:500px;
+  margin:0 auto;
+  box-shadow:0 4px 20px rgba(30,58,138,0.08);
+}
+.garantia-box img{max-width:120px;margin:0 auto 16px}
+.garantia-box h3{font-size:20px;font-weight:900;color:var(--azul);margin-bottom:10px}
+.garantia-box p{font-size:14px;color:var(--cinza-texto);line-height:1.7;max-width:380px;margin:0 auto}
+
+/* ── CTA FINAL ── */
+.cta-final{
+  background:var(--azul);
+  padding:56px 20px;
+  text-align:center;
+}
+.cta-final h2{
+  font-size:clamp(20px,4vw,30px);
+  font-weight:900;
+  color:var(--branco);
+  max-width:560px;
+  margin:0 auto 8px;
+}
+.cta-final p{
+  font-size:15px;
+  color:rgba(255,255,255,0.7);
+  margin-bottom:28px;
+  max-width:440px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.cta-final .preco-mini{
+  margin-bottom:20px;
+}
+.cta-final .preco-mini .de{
+  font-size:14px;color:rgba(255,255,255,0.4);
+  text-decoration:line-through;margin-bottom:2px;
+}
+.cta-final .preco-mini .valor{
+  font-family:'Montserrat',sans-serif;font-weight:900;
+  font-size:clamp(44px,10vw,68px);
+  color:var(--amarelo);line-height:1;
+}
+.cta-final .preco-mini .valor sup{font-size:22px;vertical-align:super}
+
+/* ── TEMPORIZADOR ── */
+.timer-wrap{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  margin-bottom:24px;
+  flex-wrap:wrap;
+}
+.timer-label{
+  font-size:13px;
+  color:rgba(255,255,255,0.7);
+  font-weight:500;
+}
+.timer{
+  display:flex;gap:6px;align-items:center;
+}
+.timer-bloco{
+  background:rgba(255,255,255,0.1);
+  border:1px solid rgba(255,255,255,0.2);
+  border-radius:8px;
+  padding:6px 12px;
+  text-align:center;
+  min-width:52px;
+}
+.timer-num{
+  font-family:'Montserrat',sans-serif;
+  font-weight:900;font-size:24px;
+  color:var(--amarelo);line-height:1;
+}
+.timer-sub{font-size:10px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.5px}
+.timer-sep{font-size:20px;font-weight:900;color:var(--amarelo);margin-top:-4px}
+
+/* ── RODAPÉ ── */
+footer{
+  border-top:1px solid var(--borda);
+  padding:20px;
+  text-align:center;
+  color:var(--cinza-texto);
+  font-size:12px;
+  background:var(--cinza-fundo);
+}
+footer a{color:var(--azul);text-decoration:underline}
+
+/* ── MOBILE ── */
+@media(max-width:640px){
+  .secao{padding:40px 16px}
+  .hero{padding:36px 16px 0}
+  .cta-final{padding:40px 16px}
+}
+</style>
+</head>
+<body>
+
+<!-- ── TOPO URGÊNCIA ── -->
+<div class="topo-urgencia">
+  🚨 ATENÇÃO! Esta oferta expira em <span id="timer-topo">15:00</span> — Não perca!
+</div>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="container">
+    <span class="badge-desconto">🔥 Desconto Especial Liberado Agora</span>
+    <p class="hero-espera">⚠️ Espera! Não feche essa página...</p>
+    <h1>Você acabou de perder a chance do básico, mas liberamos o <span class="destaque">Pacote Completo</span> por um preço <span class="destaque-vermelho">que nunca mais vai aparecer</span></h1>
+    <p class="hero-sub">Só quem chegou até aqui recebe essa oferta exclusiva. Assim que você sair dessa página, esse preço some para sempre.</p>
+
+    <!-- BANNER -->
+    <div class="banner-wrap">
+      <img src="banner_1.webp" alt="Pacote Completo para Pintores" loading="lazy">
+    </div>
+  </div>
+
+  <!-- PREÇO + CTA -->
+  <div class="preco-faixa">
+    <p class="de">De R$27,90</p>
+    <p class="por-label">Por apenas</p>
+    <div class="valor"><sup>R$</sup>19,90</div>
+    <span class="economia-pill">✓ Você economiza R$8,00 agora</span><br>
+
+    <!-- 🔄 ALTERAR: link checkout completo upsell -->
+    <a href="https://app.mivvo.io/checkout/k4h3u4umpecshvy" class="btn-sim">
+      ✅ SIM! QUERO O PACOTE COMPLETO POR R$19,90
+    </a>
+
+    <!-- 🔄 ALTERAR: link checkout básico -->
+    <a href="https://app.mivvo.io/checkout/wn165qympecjstr" class="btn-nao">
+      Não, prefiro ficar só com o básico de R$10
+    </a>
+  </div>
+</section>
+
+
+<!-- ── COMPARATIVO ── -->
+<section class="secao bg-cinza">
+  <div class="container">
+    <h2 class="secao-titulo">Veja a <span class="destaque">Diferença</span></h2>
+    <p class="secao-sub">O que você leva em cada opção — e por que o completo vale muito mais</p>
+
+    <div class="comparativo">
+
+      <!-- BÁSICO -->
+      <div class="comp-card basico">
+        <p class="comp-titulo">Plano Básico</p>
+        <p class="comp-valor">R$10</p>
+        <p class="comp-descricao">O que você escolheu</p>
+        <ul class="comp-itens">
+          <li class="comp-item"><span class="comp-dot" style="background:#D1D5DB"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#6B7280" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>5 vídeos</li>
+          <li class="comp-item"><span class="comp-dot" style="background:#D1D5DB"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#6B7280" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>10 posts</li>
+          <li class="comp-item"><span class="comp-dot" style="background:#D1D5DB"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#6B7280" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>5 stories</li>
+          <li class="comp-item"><span class="comp-x">✗</span> Sem bônus</li>
+          <li class="comp-item"><span class="comp-x">✗</span> Sem destaques bio</li>
+          <li class="comp-item"><span class="comp-x">✗</span> Conteúdo limitado</li>
+        </ul>
+      </div>
+
+      <!-- COMPLETO -->
+      <div class="comp-card completo">
+        <span class="comp-badge">⭐ MELHOR ESCOLHA</span>
+        <p class="comp-titulo">Pacote Completo</p>
+        <p class="comp-valor">R$19,90</p>
+        <p class="comp-descricao">Oferta exclusiva desta página</p>
+        <ul class="comp-itens">
+          <li class="comp-item"><span class="comp-dot"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#1E3A8A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>+90 vídeos</li>
+          <li class="comp-item"><span class="comp-dot"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#1E3A8A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>+120 posts</li>
+          <li class="comp-item"><span class="comp-dot"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#1E3A8A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Destaques bio Instagram</li>
+          <li class="comp-item"><span class="comp-dot"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#1E3A8A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>6 bônus exclusivos</li>
+          <li class="comp-item"><span class="comp-dot"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#1E3A8A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>R$366 em bônus grátis</li>
+          <li class="comp-item"><span class="comp-dot"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#1E3A8A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>30+ dias de conteúdo</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p style="text-align:center;font-size:13px;color:var(--cinza-texto);margin-top:16px;">
+      💡 Por apenas <strong>R$9,90 a mais</strong> você leva 18x mais conteúdo + R$366 em bônus.
+    </p>
+  </div>
+</section>
+
+
+<!-- ── O QUE ESTÁ INCLUÍDO ── -->
+<section class="secao bg-branco">
+  <div class="container">
+    <h2 class="secao-titulo">Tudo Que Você <span class="destaque">Recebe</span> no Completo</h2>
+    <p class="secao-sub">Cada item foi criado para gerar clientes para o seu negócio todos os dias</p>
+
+    <ul class="itens-lista">
+      <li class="item">
+        <span class="item-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div>
+          <div class="item-titulo">🎥 +90 Vídeos de Objetos Falantes</div>
+          <div class="item-desc">Formatos virais prontos para Instagram Reels, TikTok e WhatsApp. Só baixar e postar.</div>
+        </div>
+      </li>
+      <li class="item">
+        <span class="item-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div>
+          <div class="item-titulo">🖼️ +120 Posts Editáveis</div>
+          <div class="item-desc">Mais de 4 meses de conteúdo visual pronto para suas redes. Sem precisar criar nada.</div>
+        </div>
+      </li>
+      <li class="item">
+        <span class="item-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div>
+          <div class="item-titulo">✨ Destaques Para Bio no Instagram</div>
+          <div class="item-desc">Deixe seu perfil com cara profissional e atraia mais seguidores locais.</div>
+        </div>
+      </li>
+      <li class="item item-bonus">
+        <span class="item-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#1E3A8A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div>
+          <div class="item-titulo">🎁 Bônus 1: Painel de Gestão Inteligente</div>
+          <div class="item-desc">Controle seus serviços, clientes e agenda em um só lugar.</div>
+        </div>
+      </li>
+      <li class="item item-bonus">
+        <span class="item-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#1E3A8A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div>
+          <div class="item-titulo">🎁 Bônus 2: Método Posts que Atrai Clientes</div>
+          <div class="item-desc">O passo a passo de como postar para transformar visualizações em clientes.</div>
+        </div>
+      </li>
+      <li class="item item-bonus">
+        <span class="item-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#1E3A8A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div>
+          <div class="item-titulo">🎁 Bônus 3: Fórmula Instagram que Vende</div>
+          <div class="item-desc">Estratégias simples para crescer no Instagram sem pagar tráfego.</div>
+        </div>
+      </li>
+      <li class="item item-bonus">
+        <span class="item-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#1E3A8A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div>
+          <div class="item-titulo">🎁 Bônus 4: Protocolo de Atendimento que Fecha Vendas</div>
+          <div class="item-desc">Saiba exatamente o que falar para transformar mensagens em contratos.</div>
+        </div>
+      </li>
+      <li class="item item-bonus">
+        <span class="item-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#1E3A8A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div>
+          <div class="item-titulo">🎁 Bônus 5: Biblioteca de Respostas para WhatsApp</div>
+          <div class="item-desc">Respostas prontas para os pedidos de orçamento mais comuns. Atenda mais rápido e feche mais.</div>
+        </div>
+      </li>
+      <li class="item item-bonus">
+        <span class="item-check"><svg viewBox="0 0 10 8" fill="none"><path d="M1 3.5L3.5 6.5L9 1" stroke="#1E3A8A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div>
+          <div class="item-titulo">🎁 Bônus 6: Sistema de Controle de Clientes</div>
+          <div class="item-desc">Nunca mais perca um follow-up. Organize sua carteira de clientes e aumente a retenção.</div>
+        </div>
+      </li>
+    </ul>
+
+    <div style="text-align:center;margin-top:32px;padding:20px;background:var(--azul-claro);border:1px solid var(--azul-medio);border-radius:12px;">
+      <p style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:clamp(14px,2vw,17px);color:var(--azul);">
+        Valor total de tudo isso: <span style="text-decoration:line-through;color:var(--cinza-texto);font-weight:600;">R$393,00</span>
+      </p>
+      <p style="font-family:'Montserrat',sans-serif;font-weight:900;font-size:clamp(22px,4vw,32px);color:var(--vermelho);margin-top:4px;">
+        Hoje só aqui: <strong>R$19,90</strong>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── DEPOIMENTOS ── -->
+<section class="secao bg-cinza">
+  <div class="container">
+    <h2 class="secao-titulo">Quem Já Usa o <span class="destaque">Pacote Completo</span> Fala:</h2>
+    <p class="secao-sub">Resultados reais de quem apostou no conteúdo pronto</p>
+
+    <div class="depo-destaque">
+      <p class="depo-texto">"Postei o primeiro vídeo no mesmo dia que recebi. Em 2 dias já tinha 3 clientes me chamando no WhatsApp. Nunca tinha conseguido isso com as fotos que eu mesmo tirava."</p>
+      <p class="depo-autor">— Carlos, pintor há 12 anos, São Paulo/SP</p>
+    </div>
+    <div class="depo-destaque">
+      <p class="depo-texto">"Eu não entendia nada de redes sociais. Com os vídeos prontos, meu Instagram começou a ter curtidas e comentários de pessoas da minha cidade. Vale muito mais do que paguei."</p>
+      <p class="depo-autor">— Rodrigo, empresa de pintura, Curitiba/PR</p>
+    </div>
+    <div class="depo-destaque">
+      <p class="depo-texto">"Os bônus foram o que mais me surpreendeu. O protocolo de atendimento mudou completamente como eu respondo os clientes no WhatsApp. Fechei 2 serviços essa semana só com isso."</p>
+      <p class="depo-autor">— Marcelo, pintor autônomo, Belo Horizonte/MG</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── GARANTIA ── -->
+<section class="secao bg-azul-claro">
+  <div class="container">
+    <div class="garantia-box">
+      <img src="Garantia.webp" alt="Garantia de 7 dias">
+      <h3>Risco Zero — 7 Dias de Garantia</h3>
+      <p>Se por qualquer motivo você não ficar satisfeito, basta enviar um email e devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── CTA FINAL ── -->
+<div class="cta-final">
+  <div class="container">
+    <h2>Última Chance de Pegar o Pacote Completo por Este Preço</h2>
+    <p>Assim que você sair dessa página, essa oferta desaparece. Não deixe para depois.</p>
+
+    <!-- TEMPORIZADOR -->
+    <div class="timer-wrap">
+      <span class="timer-label">⏱️ Oferta expira em:</span>
+      <div class="timer">
+        <div class="timer-bloco"><div class="timer-num" id="t-min">15</div><div class="timer-sub">min</div></div>
+        <span class="timer-sep">:</span>
+        <div class="timer-bloco"><div class="timer-num" id="t-seg">00</div><div class="timer-sub">seg</div></div>
+      </div>
+    </div>
+
+    <div class="preco-mini">
+      <p class="de">De R$27,90</p>
+      <div class="valor"><sup>R$</sup>19,90</div>
+    </div>
+
+    <!-- 🔄 ALTERAR: link checkout completo upsell -->
+    <a href="https://app.mivvo.io/checkout/k4h3u4umpecshvy" class="btn-sim" style="max-width:520px;margin:0 auto 14px;display:block;">
+      ✅ SIM! QUERO O PACOTE COMPLETO POR R$19,90
+    </a>
+
+    <!-- 🔄 ALTERAR: link checkout básico -->
+    <a href="https://app.mivvo.io/checkout/wn165qympecjstr" class="btn-nao">
+      Não, prefiro ficar só com o básico de R$10
+    </a>
+  </div>
+</div>
+
+
+<!-- ── RODAPÉ ── -->
+<footer>
+  <p style="margin-bottom:6px;">
+    <a href="https://trafego6em7.com/politica-de-privacidade" target="_blank" rel="noopener">Política de Privacidade</a>
+    &nbsp;|&nbsp;
+    <a href="https://trafego6em7.com/termos-de-uso/" target="_blank" rel="noopener">Termos de Uso</a>
+  </p>
+  <p>© 2026 — Todos os direitos reservados.</p>
+</footer>
+
+
+<script>
+/* ── TEMPORIZADOR ── */
+(function(){
+  let total = 15 * 60;
+  function tick(){
+    if(total <= 0){ total = 0; }
+    const m = Math.floor(total / 60);
+    const s = total % 60;
+    const fmt = n => String(n).padStart(2,'0');
+    document.getElementById('t-min').textContent = fmt(m);
+    document.getElementById('t-seg').textContent = fmt(s);
+    document.getElementById('timer-topo').textContent = fmt(m)+':'+fmt(s);
+    if(total > 0){ total--; setTimeout(tick, 1000); }
+  }
+  tick();
+})();
+
+/* ── UTM KIRVANO ── */
+window.onload = () => {
+  document.querySelectorAll("a").forEach(link => {
+    if(link.href && link.href.includes("kirvano")){
+      let params = document.location.search.replace("?","");
+      link.href = link.href + (link.href.indexOf("?") > 0 ? "&" : "?") + params;
+    }
+  });
+};
+</script>
+
+</body>
+</html>
