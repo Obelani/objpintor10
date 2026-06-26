@@ -41,19 +41,10 @@ fbq('track','PageView');
 }
 
 html { scroll-behavior: smooth; }
-
-body {
-  font-family: 'Inter', sans-serif;
-  background: var(--preto);
-  color: var(--branco);
-  line-height: 1.6;
-  overflow-x: hidden;
-}
-
+body { font-family: 'Inter', sans-serif; background: var(--preto); color: var(--branco); line-height: 1.6; overflow-x: hidden; }
 h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
 img { max-width: 100%; height: auto; display: block; }
 a { text-decoration: none; color: inherit; }
-
 .container { max-width: 860px; margin: 0 auto; padding: 0 20px; }
 
 /* ── URGÊNCIA ── */
@@ -64,95 +55,40 @@ a { text-decoration: none; color: inherit; }
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: clamp(12px, 2.5vw, 14px);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  position: sticky; top: 0; z-index: 100;
   color: var(--preto);
 }
 .urgencia .data-destaque {
-  background: var(--preto);
-  color: var(--amarelo);
-  padding: 2px 10px;
-  border-radius: 4px;
-  display: inline-block;
-  margin: 0 4px;
+  background: var(--preto); color: var(--amarelo);
+  padding: 2px 10px; border-radius: 4px;
+  display: inline-block; margin: 0 4px;
 }
 
 /* ── HERO ── */
-.hero {
-  padding: 60px 20px 48px;
-  text-align: center;
-  background: var(--cinza-escuro);
-  border-bottom: 1px solid var(--borda);
-}
+.hero { padding: 60px 20px 48px; text-align: center; background: var(--cinza-escuro); border-bottom: 1px solid var(--borda); }
 .nicho-badge {
-  display: inline-block;
-  background: var(--laranja);
-  color: var(--preto);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 11px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  padding: 5px 18px;
-  border-radius: 999px;
-  margin-bottom: 20px;
+  display: inline-block; background: var(--laranja); color: var(--preto);
+  font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 11px;
+  letter-spacing: 1.5px; text-transform: uppercase; padding: 5px 18px;
+  border-radius: 999px; margin-bottom: 20px;
 }
-.hero h1 {
-  font-size: clamp(26px, 5vw, 46px);
-  font-weight: 900;
-  max-width: 720px;
-  margin: 0 auto 16px;
-}
+.hero h1 { font-size: clamp(26px, 5vw, 46px); font-weight: 900; max-width: 720px; margin: 0 auto 16px; }
 .hero h1 .destaque { color: var(--laranja); }
-.hero .subtitulo {
-  font-size: clamp(14px, 2vw, 17px);
-  color: #D1D5DB;
-  max-width: 580px;
-  margin: 0 auto 32px;
-}
-.preco-bloco {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-  margin-bottom: 32px;
-}
+.hero .subtitulo { font-size: clamp(14px, 2vw, 17px); color: #D1D5DB; max-width: 580px; margin: 0 auto 32px; }
+
+.preco-bloco { display: inline-flex; flex-direction: column; align-items: center; gap: 6px; margin-bottom: 32px; }
 .preco-bloco .de { font-size: 14px; color: var(--texto-muted); text-decoration: line-through; }
-.preco-bloco .por {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  font-size: 58px;
-  color: var(--amarelo);
-  line-height: 1;
-}
+.preco-bloco .por { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 58px; color: var(--amarelo); line-height: 1; }
 .preco-bloco .por sup { font-size: 22px; vertical-align: super; }
-.preco-bloco .garantia-pill {
-  font-size: 12px;
-  background: var(--verde-claro);
-  color: #166534;
-  padding: 4px 14px;
-  border-radius: 999px;
-  font-weight: 600;
-}
+.preco-bloco .garantia-pill { font-size: 12px; background: var(--verde-claro); color: #166534; padding: 4px 14px; border-radius: 999px; font-weight: 600; }
 
 /* ── BOTÕES ── */
 .btn-cta {
-  display: inline-block;
-  background: var(--laranja);
-  color: var(--preto);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: clamp(13px, 2vw, 16px);
-  padding: 18px 36px;
-  border-radius: 8px;
-  letter-spacing: 0.4px;
-  transition: background 0.15s, transform 0.15s;
-  cursor: pointer;
-  border: none;
-  text-align: center;
-  width: 100%;
-  max-width: 480px;
+  display: inline-block; background: var(--laranja); color: var(--preto);
+  font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: clamp(13px, 2vw, 16px);
+  padding: 18px 36px; border-radius: 8px; letter-spacing: 0.4px;
+  transition: background 0.15s, transform 0.15s; cursor: pointer;
+  border: none; text-align: center; width: 100%; max-width: 480px;
 }
 .btn-cta:hover { background: #EA6100; transform: translateY(-2px); }
 .btn-cta.verde { background: var(--verde); color: var(--branco); }
@@ -162,101 +98,50 @@ a { text-decoration: none; color: inherit; }
 .secao { padding: 64px 20px; border-top: 1px solid var(--borda); }
 .secao.bg-escuro { background: var(--cinza-escuro); }
 .secao.bg-card   { background: var(--cinza-medio); }
-
-.secao-titulo {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  font-size: clamp(21px, 4vw, 32px);
-  text-align: center;
-  margin-bottom: 8px;
-}
+.secao-titulo { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: clamp(21px, 4vw, 32px); text-align: center; margin-bottom: 8px; }
 .secao-titulo .destaque { color: var(--laranja); }
-.secao-sub {
-  text-align: center;
-  color: var(--texto-muted);
-  font-size: clamp(13px, 2vw, 15px);
-  margin-bottom: 40px;
-  max-width: 520px;
-  margin-left: auto;
-  margin-right: auto;
-}
+.secao-sub { text-align: center; color: var(--texto-muted); font-size: clamp(13px, 2vw, 15px); margin-bottom: 40px; max-width: 520px; margin-left: auto; margin-right: auto; }
 
 /* ── BANNER ── */
 .banner-wrap img { width: 100%; border-radius: 12px; border: 1px solid var(--borda); }
 
 /* ── LISTA DE ITENS ── */
-.lista-itens {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 12px;
-  list-style: none;
-}
+.lista-itens { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 12px; list-style: none; }
 .lista-itens li {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  background: var(--cinza-card);
-  border: 1px solid var(--borda);
-  border-radius: 10px;
-  padding: 14px 16px;
-  font-size: 14px;
-  line-height: 1.5;
+  display: flex; align-items: flex-start; gap: 12px;
+  background: var(--cinza-card); border: 1px solid var(--borda);
+  border-radius: 10px; padding: 14px 16px; font-size: 14px; line-height: 1.5;
   transition: border-color 0.2s;
 }
 .lista-itens li:hover { border-color: var(--laranja); }
-.check-icon {
-  flex-shrink: 0;
-  width: 20px; height: 20px;
-  background: var(--verde);
-  border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  margin-top: 1px;
-}
+.check-icon { flex-shrink: 0; width: 20px; height: 20px; background: var(--verde); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 1px; }
 .check-icon svg { width: 10px; height: 10px; }
 
-/* ── VÍDEOS ── */
+/* ── VÍDEOS — sem fundo branco ── */
 .phone-video-section {
-  background: #ffffff;
-  padding: 40px 10px;
-  border-radius: 18px;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
   overflow: hidden;
 }
 .phone-video-grid {
-  max-width: 720px;
-  margin: 0 auto;
-  display: grid;
-  gap: 14px;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
+  max-width: 720px; margin: 0 auto; display: grid;
+  gap: 14px; grid-template-columns: repeat(3, 1fr); justify-items: center;
 }
 .phone-card { width: min(200px, 100%); display: grid; place-items: center; }
 .phone-frame {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 9/16;
-  border-radius: 32px;
-  background: #000;
-  border: 4px solid #e9e9e9;
-  overflow: hidden;
-  box-shadow: 0 8px 18px rgba(0,0,0,.18);
+  position: relative; width: 100%; aspect-ratio: 9/16;
+  border-radius: 32px; background: #000; border: 4px solid #333;
+  overflow: hidden; box-shadow: 0 8px 18px rgba(0,0,0,.5);
 }
 .phone-frame::before {
-  content: "";
-  position: absolute;
-  inset: 6px;
-  border-radius: 26px;
-  border: 2px solid rgba(255,255,255,.12);
-  z-index: 2;
-  pointer-events: none;
+  content: ""; position: absolute; inset: 6px; border-radius: 26px;
+  border: 2px solid rgba(255,255,255,.12); z-index: 2; pointer-events: none;
 }
 .phone-notch {
-  position: absolute;
-  top: 6px; left: 50%;
-  transform: translateX(-50%);
-  width: 40%; height: 16px;
-  background: rgba(0,0,0,.75);
-  border-radius: 0 0 12px 12px;
-  z-index: 4;
+  position: absolute; top: 6px; left: 50%; transform: translateX(-50%);
+  width: 40%; height: 16px; background: rgba(0,0,0,.75);
+  border-radius: 0 0 12px 12px; z-index: 4;
 }
 .video-host { position: absolute; inset: 0; z-index: 1; overflow: hidden; }
 .video-host iframe { width: 100%; height: 100%; border: none; }
@@ -265,117 +150,70 @@ a { text-decoration: none; color: inherit; }
   .phone-card { width: min(240px, 85vw); }
   .video-host iframe { pointer-events: none; }
   .tap-center {
-    position: absolute;
-    top: 50%; left: 50%;
+    position: absolute; top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    width: 100px; height: 100px;
-    border-radius: 50%;
-    z-index: 5; cursor: pointer;
+    width: 100px; height: 100px; border-radius: 50%; z-index: 5; cursor: pointer;
   }
 }
 @media(min-width:641px) { .tap-center { display: none; } }
 
 /* ── MÉTODO MAPA ── */
-.mapa-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 14px;
-  margin-top: 32px;
-}
+.mapa-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; margin-top: 32px; }
 .mapa-card {
-  background: var(--cinza-card);
-  border: 1px solid var(--borda);
-  border-radius: 12px;
-  padding: 24px 18px;
-  text-align: center;
+  background: var(--cinza-card); border: 1px solid var(--borda);
+  border-radius: 12px; padding: 24px 18px; text-align: center;
   transition: border-color 0.2s;
 }
 .mapa-card:hover { border-color: var(--laranja); }
-.mapa-card .letra {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 44px; font-weight: 900;
-  color: var(--laranja); line-height: 1; margin-bottom: 8px;
-}
-.mapa-card h3 { font-size: 14px; font-weight: 700; margin-bottom: 6px; }
-.mapa-card p  { font-size: 13px; color: var(--texto-muted); line-height: 1.5; }
+.mapa-card .mapa-icon { width: 80px; height: 80px; margin: 0 auto 12px; }
+.mapa-card .mapa-icon img { width: 100%; height: 100%; object-fit: contain; }
+.mapa-card .letra { font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 900; color: var(--laranja); margin-bottom: 4px; }
+.mapa-card h3 { font-size: 13px; font-weight: 700; margin-bottom: 6px; }
+.mapa-card p  { font-size: 12px; color: var(--texto-muted); line-height: 1.5; }
 
 /* ── VANTAGENS ── */
-.vantagens-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
-}
+.vantagens-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
 @media(max-width:640px) { .vantagens-grid { grid-template-columns: 1fr; } }
 .vantagens-lista { list-style: none; display: flex; flex-direction: column; gap: 14px; }
 .vantagens-lista li { display: flex; align-items: center; gap: 12px; font-size: 15px; color: #E5E7EB; }
-.v-check {
-  flex-shrink: 0; width: 22px; height: 22px;
-  background: var(--laranja); border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-}
+.v-check { flex-shrink: 0; width: 22px; height: 22px; background: var(--laranja); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
 .v-check svg { width: 11px; height: 11px; }
 
 /* ── BÔNUS ── */
 .bonus-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
 @media(max-width:540px) { .bonus-grid { grid-template-columns: repeat(2, 1fr); } }
-.bonus-grid img {
-  border-radius: 10px; border: 1px solid var(--borda); width: 100%;
-  transition: transform 0.2s, border-color 0.2s;
-}
+.bonus-grid img { border-radius: 10px; border: 1px solid var(--borda); width: 100%; transition: transform 0.2s, border-color 0.2s; }
 .bonus-grid img:hover { transform: scale(1.03); border-color: var(--laranja); }
 
-/* ── DEPOIMENTOS ── */
-.depo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 40px; }
-@media(max-width:540px) { .depo-grid { grid-template-columns: 1fr; } }
+/* ── DEPOIMENTOS — 4 lado a lado ── */
+.depo-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 40px; }
+@media(max-width:640px) { .depo-grid { grid-template-columns: repeat(2, 1fr); } }
+@media(max-width:400px) { .depo-grid { grid-template-columns: 1fr; } }
 .depo-grid img { border-radius: 10px; border: 1px solid var(--borda); width: 100%; }
 
 /* ── COMO FUNCIONA ── */
 .como-funciona-img { width: 100%; max-width: 520px; margin: 0 auto; border-radius: 12px; border: 1px solid var(--borda); }
 
 /* ── ÍCONES ── */
-.icones-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 32px; }
+.icones-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
 @media(max-width:480px) { .icones-grid { grid-template-columns: repeat(2, 1fr); } }
 .icones-grid img { border-radius: 12px; width: 100%; }
 
 /* ── PLANOS ── */
-.alerta-promo {
-  background: #111; border: 1px solid var(--laranja);
-  border-radius: 10px; padding: 16px 24px; text-align: center; margin-bottom: 36px;
-}
-.alerta-promo p {
-  font-family: 'Montserrat', sans-serif; font-weight: 700;
-  font-size: clamp(13px, 2vw, 15px); color: var(--amarelo);
-}
+.alerta-promo { background: #111; border: 1px solid var(--laranja); border-radius: 10px; padding: 16px 24px; text-align: center; margin-bottom: 36px; }
+.alerta-promo p { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: clamp(13px, 2vw, 15px); color: var(--amarelo); }
 .planos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 @media(max-width:620px) { .planos-grid { grid-template-columns: 1fr; } }
-.plano {
-  background: var(--cinza-card); border: 1px solid var(--borda);
-  border-radius: 14px; padding: 28px 22px;
-  display: flex; flex-direction: column; gap: 18px; position: relative;
-}
+.plano { background: var(--cinza-card); border: 1px solid var(--borda); border-radius: 14px; padding: 28px 22px; display: flex; flex-direction: column; gap: 18px; position: relative; }
 .plano.destaque { border: 2px solid var(--laranja); }
-.plano-badge {
-  position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
-  background: var(--laranja); color: var(--preto);
-  font-family: 'Montserrat', sans-serif; font-weight: 800;
-  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
-  padding: 4px 18px; border-radius: 999px; white-space: nowrap;
-}
-.plano-header h3 {
-  font-size: 12px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 0.8px; color: var(--texto-muted); margin-bottom: 10px;
-}
+.plano-badge { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--laranja); color: var(--preto); font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 18px; border-radius: 999px; white-space: nowrap; }
+.plano-header h3 { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--texto-muted); margin-bottom: 10px; }
 .plano-de { font-size: 13px; color: var(--texto-muted); text-decoration: line-through; }
 .plano-valor { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 44px; color: var(--amarelo); line-height: 1; }
 .plano-tipo { font-size: 12px; color: var(--texto-muted); margin-top: 4px; }
 .plano ul { list-style: none; display: flex; flex-direction: column; gap: 10px; flex: 1; }
 .plano ul li { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; color: #D1D5DB; line-height: 1.4; }
-.p-check {
-  flex-shrink: 0; width: 16px; height: 16px;
-  background: var(--verde); border-radius: 50%;
-  display: flex; align-items: center; justify-content: center; margin-top: 1px;
-}
+.p-check { flex-shrink: 0; width: 16px; height: 16px; background: var(--verde); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 1px; }
 .p-check svg { width: 8px; height: 8px; }
 .plano ul li.bonus-item { color: var(--amarelo); font-weight: 600; }
 .plano ul li.bonus-item .p-check { background: var(--laranja); }
@@ -384,27 +222,16 @@ a { text-decoration: none; color: inherit; }
 .super-oferta-wrap img { max-width: 120px; margin: 0 auto; }
 
 /* ── GARANTIA ── */
-.garantia-box {
-  background: var(--cinza-card); border: 1px solid var(--borda);
-  border-radius: 14px; padding: 40px 28px; text-align: center;
-  max-width: 540px; margin: 0 auto;
-}
+.garantia-box { background: var(--cinza-card); border: 1px solid var(--borda); border-radius: 14px; padding: 40px 28px; text-align: center; max-width: 540px; margin: 0 auto; }
 .garantia-box img { max-width: 140px; margin: 0 auto 20px; }
 .garantia-box h3 { font-size: 22px; font-weight: 900; color: var(--verde); margin-bottom: 12px; }
 .garantia-box p { font-size: 15px; color: var(--texto-muted); line-height: 1.7; max-width: 420px; margin: 0 auto; }
 
 /* ── ENTREGA ── */
-.entrega-box {
-  display: flex; gap: 24px; align-items: center;
-  background: var(--cinza-card); border: 1px solid var(--borda);
-  border-radius: 14px; padding: 28px 30px; max-width: 540px; margin: 0 auto;
-}
+.entrega-box { display: flex; gap: 24px; align-items: center; background: var(--cinza-card); border: 1px solid var(--borda); border-radius: 14px; padding: 28px 30px; max-width: 540px; margin: 0 auto; }
 @media(max-width:480px) { .entrega-box { flex-direction: column; text-align: center; } }
 .entrega-icones { display: flex; gap: 10px; flex-shrink: 0; }
-.entrega-icone {
-  width: 50px; height: 50px; background: var(--laranja);
-  border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px;
-}
+.entrega-icone { width: 50px; height: 50px; background: var(--laranja); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; }
 .entrega-box h3 { font-size: 17px; font-weight: 700; margin-bottom: 6px; }
 .entrega-box p  { font-size: 14px; color: var(--texto-muted); line-height: 1.6; }
 
@@ -413,16 +240,13 @@ footer { border-top: 1px solid var(--borda); padding: 24px 20px; text-align: cen
 footer a { color: #6B7280; text-decoration: underline; }
 
 /* ── CTA FIXO MOBILE ── */
-.cta-fixo {
-  display: none; position: fixed; bottom: 0; left: 0; right: 0;
-  padding: 10px 14px; background: rgba(10,10,10,0.96);
-  border-top: 1px solid var(--borda); z-index: 99;
-}
+.cta-fixo { display: none; position: fixed; bottom: 0; left: 0; right: 0; padding: 10px 14px; background: rgba(10,10,10,0.96); border-top: 1px solid var(--borda); z-index: 99; }
 @media(max-width:640px) { .cta-fixo { display: block; } }
 
 /* ── UTILITÁRIOS ── */
 .text-center { text-align: center; }
 .mt-32 { margin-top: 32px; }
+.mt-24 { margin-top: 24px; }
 @media(max-width:640px) { .secao { padding: 48px 16px; } .hero { padding: 44px 16px 36px; } }
 </style>
 </head>
@@ -471,10 +295,10 @@ footer a { color: #6B7280; text-decoration: underline; }
 
 
 <!-- ════════════════════════════════════
-     BANNER 1
+     BANNER 1 — logo abaixo da headline
      🔄 ALTERAR: src da imagem
 ════════════════════════════════════ -->
-<section class="secao bg-escuro" style="padding-top:48px;padding-bottom:48px;">
+<section class="secao bg-escuro" style="padding-top:40px;padding-bottom:40px;">
   <div class="container">
     <div class="banner-wrap">
       <!-- 🔄 ALTERAR: banner 1 do segmento -->
@@ -520,45 +344,46 @@ footer a { color: #6B7280; text-decoration: underline; }
   <div class="container">
     <h2 class="secao-titulo">Veja Alguns <span class="destaque">Modelos</span></h2>
     <p class="secao-sub">Exemplos reais do que você vai receber para postar</p>
-  </div>
 
-  <section class="phone-video-section">
-  <div class="phone-video-grid">
+    <section class="phone-video-section">
+    <div class="phone-video-grid">
 
-  <!-- 🔄 ALTERAR: Video demonstração 1 -->
-  <div class="phone-card"><div class="phone-frame">
-  <div class="phone-notch"></div>
-  <div class="video-host">
-  <iframe src="https://play.tynk.ai/p/4ab8ad34-e9b6-486e-990a-713490c6ce86" width="100%" height="100%" style="aspect-ratio:9/16;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="tap-center" onclick="ativarVideo(this)"></div>
-  </div></div>
+    <!-- 🔄 ALTERAR: Video demonstração 1 -->
+    <div class="phone-card"><div class="phone-frame">
+    <div class="phone-notch"></div>
+    <div class="video-host">
+    <iframe src="https://play.tynk.ai/p/4ab8ad34-e9b6-486e-990a-713490c6ce86" width="100%" height="100%" style="aspect-ratio:9/16;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="tap-center" onclick="ativarVideo(this)"></div>
+    </div></div>
 
-  <!-- 🔄 ALTERAR: Video demonstração 2 -->
-  <div class="phone-card"><div class="phone-frame">
-  <div class="phone-notch"></div>
-  <div class="video-host">
-  <iframe src="https://play.tynk.ai/p/0ac07c56-3b21-4657-9ce5-87de7b062c22" width="100%" height="100%" style="aspect-ratio:9/16;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="tap-center" onclick="ativarVideo(this)"></div>
-  </div></div>
+    <!-- 🔄 ALTERAR: Video demonstração 2 -->
+    <div class="phone-card"><div class="phone-frame">
+    <div class="phone-notch"></div>
+    <div class="video-host">
+    <iframe src="https://play.tynk.ai/p/0ac07c56-3b21-4657-9ce5-87de7b062c22" width="100%" height="100%" style="aspect-ratio:9/16;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="tap-center" onclick="ativarVideo(this)"></div>
+    </div></div>
 
-  <!-- 🔄 ALTERAR: Video demonstração 3 -->
-  <div class="phone-card"><div class="phone-frame">
-  <div class="phone-notch"></div>
-  <div class="video-host">
-  <iframe src="https://play.tynk.ai/p/20397beb-80d7-4920-b419-6df81b91dc13" width="100%" height="100%" style="aspect-ratio:9/16;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="tap-center" onclick="ativarVideo(this)"></div>
-  </div></div>
+    <!-- 🔄 ALTERAR: Video demonstração 3 -->
+    <div class="phone-card"><div class="phone-frame">
+    <div class="phone-notch"></div>
+    <div class="video-host">
+    <iframe src="https://play.tynk.ai/p/20397beb-80d7-4920-b419-6df81b91dc13" width="100%" height="100%" style="aspect-ratio:9/16;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="tap-center" onclick="ativarVideo(this)"></div>
+    </div></div>
 
+    </div>
+    </section>
   </div>
-  </section>
 </section>
 
 
 <!-- ════════════════════════════════════
      MÉTODO M.A.P.A. — FIXO
+     ícones: icon1=M, icon2=A, icon3=P, icon4=A
 ════════════════════════════════════ -->
 <section class="secao bg-card">
   <div class="container">
@@ -572,10 +397,30 @@ footer a { color: #6B7280; text-decoration: underline; }
     </div>
 
     <div class="mapa-grid">
-      <div class="mapa-card"><div class="letra">M</div><h3>Micro investimento</h3><p>Mais barato que um lanche — a partir de R$10</p></div>
-      <div class="mapa-card"><div class="letra">A</div><h3>Ação imediata</h3><p>Comprou, já posta hoje mesmo</p></div>
-      <div class="mapa-card"><div class="letra">P</div><h3>Prova rápida</h3><p>Postou hoje, já sente a diferença</p></div>
-      <div class="mapa-card"><div class="letra">A</div><h3>Acesso imediato</h3><p>Sem espera, sem burocracia</p></div>
+      <div class="mapa-card">
+        <div class="mapa-icon"><img src="icon1.webp" alt="Micro investimento"></div>
+        <div class="letra">M</div>
+        <h3>Micro investimento</h3>
+        <p>Mais barato que um lanche — a partir de R$10</p>
+      </div>
+      <div class="mapa-card">
+        <div class="mapa-icon"><img src="icon2.webp" alt="Ação imediata"></div>
+        <div class="letra">A</div>
+        <h3>Ação imediata</h3>
+        <p>Comprou, já posta hoje mesmo</p>
+      </div>
+      <div class="mapa-card">
+        <div class="mapa-icon"><img src="icon3.webp" alt="Prova rápida"></div>
+        <div class="letra">P</div>
+        <h3>Prova rápida</h3>
+        <p>Postou hoje, já sente a diferença</p>
+      </div>
+      <div class="mapa-card">
+        <div class="mapa-icon"><img src="icon4.webp" alt="Acesso imediato"></div>
+        <div class="letra">A</div>
+        <h3>Acesso imediato</h3>
+        <p>Sem espera, sem burocracia</p>
+      </div>
     </div>
 
     <div class="text-center mt-32">
@@ -589,7 +434,8 @@ footer a { color: #6B7280; text-decoration: underline; }
 
 
 <!-- ════════════════════════════════════
-     VANTAGENS — FIXO | Banner 2 🔄 ALTERAR
+     VANTAGENS — FIXO
+     Banner 2 à esquerda  🔄 ALTERAR: src
 ════════════════════════════════════ -->
 <section class="secao bg-escuro">
   <div class="container">
@@ -597,6 +443,11 @@ footer a { color: #6B7280; text-decoration: underline; }
     <p class="secao-sub">Tudo que você precisa para manter suas redes ativas e atrair clientes todos os dias</p>
 
     <div class="vantagens-grid">
+      <!-- 🔄 ALTERAR: Banner 2 do segmento -->
+      <div class="banner-wrap">
+        <img src="banner2_pintor.webp" alt="Exemplo do pacote" loading="lazy">
+      </div>
+
       <ul class="vantagens-lista">
         <li><span class="v-check"><svg viewBox="0 0 11 8" fill="none"><path d="M1 3.5L3.5 6.5L10 1" stroke="#0A0A0A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Economize horas criando conteúdo</li>
         <li><span class="v-check"><svg viewBox="0 0 11 8" fill="none"><path d="M1 3.5L3.5 6.5L10 1" stroke="#0A0A0A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Publique vídeos profissionais todos os dias</li>
@@ -604,15 +455,10 @@ footer a { color: #6B7280; text-decoration: underline; }
         <li><span class="v-check"><svg viewBox="0 0 11 8" fill="none"><path d="M1 3.5L3.5 6.5L10 1" stroke="#0A0A0A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Destaque sua empresa da concorrência</li>
         <li><span class="v-check"><svg viewBox="0 0 11 8" fill="none"><path d="M1 3.5L3.5 6.5L10 1" stroke="#0A0A0A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Conteúdo pronto para usar</li>
         <li><span class="v-check"><svg viewBox="0 0 11 8" fill="none"><path d="M1 3.5L3.5 6.5L10 1" stroke="#0A0A0A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Basta baixar e postar</li>
+        <li style="margin-top:8px;">
+          <a href="#planos" class="btn-cta" style="max-width:100%;">EU QUERO BOMBAR MINHAS REDES</a>
+        </li>
       </ul>
-      <!-- 🔄 ALTERAR: Banner 2 do segmento -->
-      <div class="banner-wrap">
-        <img src="banner2_pintor.webp" alt="Exemplo do pacote" loading="lazy">
-      </div>
-    </div>
-
-    <div class="text-center mt-32">
-      <a href="#planos" class="btn-cta">EU QUERO BOMBAR MINHAS REDES</a>
     </div>
   </div>
 </section>
@@ -631,24 +477,9 @@ footer a { color: #6B7280; text-decoration: underline; }
 
 
 <!-- ════════════════════════════════════
-     ÍCONES DO PACOTE — FIXO
-════════════════════════════════════ -->
-<section class="secao bg-escuro" style="padding-top:40px;padding-bottom:40px;">
-  <div class="container">
-    <div class="icones-grid">
-      <img src="icon1.webp" alt="" loading="lazy">
-      <img src="icon2.webp" alt="" loading="lazy">
-      <img src="icon3.webp" alt="" loading="lazy">
-      <img src="icon4.webp" alt="" loading="lazy">
-    </div>
-  </div>
-</section>
-
-
-<!-- ════════════════════════════════════
      BÔNUS — FIXO
 ════════════════════════════════════ -->
-<section class="secao bg-card">
+<section class="secao bg-escuro">
   <div class="container">
     <h2 class="secao-titulo">🎁 6 Bônus <span class="destaque">Exclusivos</span> Para Quem Comprar Hoje</h2>
     <p class="secao-sub">Ferramentas que normalmente custariam R$366 — hoje você recebe de graça</p>
@@ -667,11 +498,12 @@ footer a { color: #6B7280; text-decoration: underline; }
 <!-- ════════════════════════════════════
      DEPOIMENTOS — FIXO
 ════════════════════════════════════ -->
-<section class="secao bg-escuro">
+<section class="secao bg-card">
   <div class="container">
     <h2 class="secao-titulo">Veja o Que Estão <span class="destaque">Falando</span></h2>
     <p class="secao-sub">🔥 Donos de empresas que já usaram o pacote</p>
 
+    <!-- 4 depoimentos lado a lado -->
     <div class="depo-grid">
       <img src="depo_1.webp" alt="Depoimento 1" loading="lazy">
       <img src="depo_2.webp" alt="Depoimento 2" loading="lazy">
@@ -717,7 +549,7 @@ footer a { color: #6B7280; text-decoration: underline; }
      PLANOS / PREÇOS
      🔄 ALTERAR: links de checkout
 ════════════════════════════════════ -->
-<section class="secao bg-card" id="planos">
+<section class="secao bg-escuro" id="planos">
   <div class="container">
 
     <div class="alerta-promo">
@@ -789,7 +621,7 @@ footer a { color: #6B7280; text-decoration: underline; }
 <!-- ════════════════════════════════════
      ENTREGA — FIXO
 ════════════════════════════════════ -->
-<section class="secao bg-escuro">
+<section class="secao bg-card">
   <div class="container">
     <h2 class="secao-titulo" style="margin-bottom:32px;">Como Você <span class="destaque">Recebe</span>?</h2>
     <div class="entrega-box">
@@ -809,7 +641,7 @@ footer a { color: #6B7280; text-decoration: underline; }
 <!-- ════════════════════════════════════
      GARANTIA — FIXO
 ════════════════════════════════════ -->
-<section class="secao bg-card">
+<section class="secao bg-escuro">
   <div class="container">
     <div class="garantia-box">
       <img src="Garantia.webp" alt="Garantia de 7 dias" loading="lazy">
